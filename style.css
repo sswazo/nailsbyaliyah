@@ -1,0 +1,501 @@
+/*
+
+Palette:
+
+#CCFFD1
+#E8F4EA
+#D2E7D6
+#E0F0E3
+#C8E1CC
+#B8D8BE
+
+
+--timberwolf: #D5D2CCff;
+--cambridge-blue: #82A398ff;
+--silver: #C4C7BFff;
+--gray: #707771ff;
+--antiflash-white: #EBEAECff;
+*/
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffffff;
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.title {
+    position: relative;
+    left: -200px;
+    top: 0;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+.titlelogo {
+    position: absolute;
+    right: 300px;
+    top: 190px;
+
+    border-radius: 100px;
+}
+
+.section {
+    bottom: 400px;
+}
+
+.section-primary {
+    background-color: #f8fff9;
+    height: 550px;
+    width: 100%;
+}
+
+#fixed-header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #82A398ff;
+    transition: top 0.3s;
+    z-index: 9999;
+}
+
+.producttext {
+    position: relative;
+    text-align: center;
+
+    bottom: -300px;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.profileheader {
+    position: absolute;
+    text-align: center;
+    left: 715px;
+    top: 7px;
+    right: 0;
+
+    border-radius: 50px;
+
+}
+
+
+.header{
+
+    position: absolute;
+    min-height: 50px;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+
+    background: #82A398ff;
+
+}
+
+
+.formtitle,
+.navbarlogo,
+.navbar a {
+    background-image: linear-gradient(
+            to right,
+            rgb(213, 213, 177),
+            #d5d5b1 50%,
+            #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 1px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbarlogo:before,
+.navbar a:before {
+    content: '';
+    background: #d5d5b1;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbarlogo:hover,
+.navbar a:hover{
+    color: #EBEAECff;
+    background-position: 0;
+    transition: color 0.15s ease-in-out;
+}
+
+.navbarlogo:hover::before,
+.navbar a:hover::before{
+    width:100%;
+}
+
+
+
+.navbar-primary {
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    text-transform: uppercase;
+    word-spacing: 40px;
+}
+
+.navbarlogo {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    text-transform: uppercase;
+}
+
+
+.marble-background {
+    background-image: url('img/stone-background-with-golden-strokes_125540-130.jpg'); /* Replace with the actual path to your marble background image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    padding: 200px 0;
+    text-align: center;
+    top: 70px;
+    height: 260px;
+    width: 110%;
+
+
+
+    color: #fff;
+
+    z-index: -1;
+}
+
+
+.no-spacing {
+    !important;
+    word-spacing: 0;
+}
+
+
+.overmij {
+    position: absolute;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    top: 730px;
+
+
+
+}
+
+.overmijinfo   {
+    position: absolute;
+    top: 850px;
+    left: 150px;
+    font-size: 20px;
+    text-align: left;
+    padding: 35px 0 43px;
+    width: 35%;
+
+
+    border-bottom: 1px solid #cbcbcb;
+
+}
+
+
+.portfoliotext{
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    top: 2000px;
+    border-bottom: 1px solid #cbcbcb;
+
+}
+
+
+
+p {
+    line-height: 1.8;
+
+}
+
+
+.overmijinfo2 {
+    top: 1100px;
+
+}
+
+
+.textovermij {
+    position: relative;
+    text-align: center;
+}
+
+.overmijimg {
+    position: relative;
+    left: 900px;
+    top: 880px;
+    padding: 100px 0 200px 0;
+    background-image: url("img/logoalyah.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: beige;
+    width: 400px;
+    height: 175px;
+
+    background-color: #B8D8BE;
+
+}
+
+.overmijlogo {
+    position: relative;
+    top: 298px;
+    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+
+}
+
+
+
+.first-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+
+    margin-top: 1050px;
+    height: 375px;
+
+}
+
+.portfolioimg,
+.item {
+background-color: #ffffff;
+    box-shadow: 2px 3px 5px 3px #d5d5d5;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    margin-top: 400px;
+    height: 375px;
+}
+
+
+.afspraakmaken,
+.webshop {
+    position: relative;
+    top: 100px;
+}
+
+.afspraakbutton a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.afspraakbutton {
+    position: relative;
+    border: none;
+    background-color: #B8D8BE;
+    text-transform: uppercase;
+
+    left: 130px;
+    bottom: 5px;
+
+    align-self: center;
+
+
+    height: 50px;
+    width: 150px;
+}
+
+.afspraakbutton:hover {
+    background-color: #78b081;
+}
+
+.productbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.productbtn {
+    position: relative;
+    border: none;
+    background-color: #B8D8BE;
+    text-transform: uppercase;
+
+
+    left: 130px;
+    bottom: 5px;
+
+
+
+    height: 50px;
+    width: 150px;
+
+}
+
+.productbtn:hover,
+.afspraakbutton:hover {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 38%;
+    border: solid #B8D8BE 2px;
+}
+
+
+.productbtn:hover a,
+.afspraakbutton:hover a{
+    color: #B8D8BE;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.afspraakimg {
+    box-shadow: 0 1px 10px #7a7a7a;
+}
+
+.producthome {
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.bhja {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 50px;
+}
+
+.div1 { grid-area: 1 / 1 / 5 / 3; }
+.div2 { grid-area: 1 / 5 / 5 / 7; }
+.div3 { grid-area: 1 / 3 / 5 / 5; }
+
+
+.portfolioimg {
+    position: relative;
+    top: 150px;
+    left: 25px;
+    width: 90%;
+    height: 90%;
+}
+
+.porftoliosection {
+    position: relative;
+    top: 200px;
+}
+
+.portfolioimg:hover {
+    opacity: 20%;
+    transition: opacity 0.2s;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parent .portfolioimg {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.2s;
+}
+
+.parent .portfolioh3 {
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.2s;
+}
+
+.parent div {
+    margin: 5px;
+    position: relative;
+}
+
+.parent div:hover .portfolioh3 {
+    opacity: 1;
+}
+
+
+.footerhome{
+    position: absolute;
+    min-height: 125px;
+    left: 0;
+    bottom: -3500px;
+    width: 100%;
+    height: 35%;
+    background-color: rgb(184, 216, 190);
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+.footertext {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: left;
+    left: 120px;
+    top: 20px;
+
+}
+
+.secondairytext{
+    font-size: 12px;
+}
+
+.underfooter {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    bottom: -490px;
+}
+
+
+
+
+
