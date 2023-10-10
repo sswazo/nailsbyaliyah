@@ -18,7 +18,55 @@ Palette:
 */
 
 
-@media screen and (max-width: 480px) {
+@media (min-width: 440px) and (max-width: 465px) {
+ .navbarlogo {
+     left: 305px;
+ }
+
+    .mobile-menu {
+        display: block;
+
+    }
+
+    /* Additional styles for the mobile menu */
+    .menu-items {
+        background-color: #c4c7bf; /* Background color for the dropdown */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 900px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: none; /* Hide menu items by default */
+    }
+
+    .menu-items.active {
+        display: block; /* Show menu items when active class is applied */
+    }
+
+    .menu-items li {
+        margin: 170px 0;
+        text-decoration: none;
+        font-size: 25px;
+
+
+    }
+
+    .menu-items li a {
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+        text-transform: uppercase;
+
+    }
+    .navbar.navbar-primary {
+        display: none; /* Hide the menu when the screen width is under 480px */
+    }
+}
+
+
+@media (min-width: 470px) and (max-width: 480px) {
 
     * {
         font-family: Poppins, sans-serif;
@@ -182,9 +230,9 @@ Palette:
     }
 
     .navbarlogo {
-        position: absolute;
+        position: fixed;
         top: 30px;
-        left: 310px;
+        left: 339px;
         text-transform: uppercase;
     }
 
