@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://scontent-ams2-1.cdninstagram.com/v/t1.15752-9/382545033_690992726295912_8632876335648195673_n.jpg?stp=dst-jpg_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=aee45a&_nc_ohc=r2uV5_y4j4AAX_KTWwR&_nc_ht=scontent-ams2-1.cdninstagram.com&oh=03_AdTdxpEk7rS7rWrjXcFfoAWRmD8r4OIqfR2MyDFOVeESSQ&oe=65424482">
     <link rel="stylesheet" href="afspraakform.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="maxwidth480.css">
+    <link rel="stylesheet" href="max-width395.css">
+    <link rel="stylesheet" href="max-width342.css">
+    <link rel="stylesheet" href="max-width430.css">
+    <link rel="stylesheet" href="maxwidth300.css">
     <title>Nails by Aliyah</title>
 </head>
 <body>
@@ -17,7 +21,7 @@
 
 <header class="header">
 
-    <div class="navbarlogo">
+    <div class="navbarlogo left-20px">
         nails by aliyah
     </div>
 
@@ -27,8 +31,18 @@
         <il><a href="#"><span class="no-spacing">Portfolio</span></a>    </il>
         <il><a href="#"><span class="no-spacing">Diensten & Prijzen</span></a>  </il>
         <il><a href="#">Contact</a>  </il>
+    </ul>
 
- </header>
+    <div class="mobile-menu">
+        <button class="menu-toggle">≣</button>
+        <ul class="menu-items">
+            <li class="menutext"><a href="#">Webshop</a></li>
+            <li class="menutext"><a href="#">Diensten & Prijzen</a></li>
+            <li class="menutext"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</header>
 
 </div>
 
@@ -230,6 +244,15 @@
             document.getElementById("myForm").style.display = "none";
             document.getElementById("myForm").style.display = "none";
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuItems = document.querySelector('.menu-items');
+
+            menuToggle.addEventListener('click', function () {
+                menuItems.classList.toggle('active');
+            });
+        });
 
     </script>
 
