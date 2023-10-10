@@ -499,7 +499,7 @@ background-color: #ffffff;
     display: none;
     position: relative;
     z-index: 1;
-    top: 30px;
+    top: 22px;
 }
 
 .menu-toggle {
@@ -507,7 +507,7 @@ background-color: #ffffff;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
 }
 

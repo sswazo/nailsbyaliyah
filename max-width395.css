@@ -112,6 +112,7 @@ Palette:
     }
 
 
+
     .header {
 
         position: absolute;
@@ -201,7 +202,7 @@ Palette:
         text-align: center;
         top: 70px;
         height: 260px;
-        width: 110%;
+        width: 395px;
 
 
         color: #fff;
@@ -531,6 +532,7 @@ Palette:
 
     .mobile-menu {
         display: block;
+
     }
 
     /* Additional styles for the mobile menu */
@@ -544,6 +546,10 @@ Palette:
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         text-align: center;
         display: none; /* Hide menu items by default */
+    }
+
+    .menu-toggle {
+
     }
 
     .menu-items.active {
