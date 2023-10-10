@@ -18,7 +18,7 @@ Palette:
 */
 
 
-@media screen  and (max-width: 395px) {
+@media screen  and (max-width: 852px) {
 
     * {
         font-family: Poppins, sans-serif;
@@ -27,15 +27,15 @@ Palette:
     .title {
         position: absolute;
         font-size: 36px;
-        left: 30px;
+        left: 140px;
         top: 120px;
 
     }
 
     .titlelogo {
         position: relative;
-        right: 25px;
-        top: 45px;
+        right: -170px;
+        top: -50px;
     }
 
     .section {
@@ -43,7 +43,7 @@ Palette:
     }
 
     .section-primary {
-        height: auto;
+        height: 400px;
     }
 
     .marble-background {
@@ -51,11 +51,11 @@ Palette:
         background-size: cover;
         background-position: center;
         position: absolute;
-        padding: 200px 0;
+        padding: 115px 0;
         text-align: center;
         top: 70px;
-        height: 100px;
-        width: 110%;
+        height: 25%;
+        width: 100%;
     }
 
 
@@ -93,7 +93,7 @@ Palette:
         position: relative;
         text-align: center;
 
-        bottom: -350px;
+        bottom: 550px;
         font-size: 32px;
         text-transform: uppercase;
 
@@ -185,29 +185,11 @@ Palette:
 
     .navbarlogo {
         position: absolute;
-        top: 30px;
-        left: 260px;
+        top: 29px;
+        left: 715px;
 
 
         text-transform: uppercase;
-    }
-
-
-    .marble-background {
-        background-image: url('img/stone-background-with-golden-strokes_125540-130.jpg'); /* Replace with the actual path to your marble background image */
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        padding: 200px 0;
-        text-align: center;
-        top: 70px;
-        height: 260px;
-        width: 100%;
-
-
-        color: #fff;
-
-        z-index: -1;
     }
 
 
@@ -223,14 +205,14 @@ Palette:
         text-align: center;
         text-transform: uppercase;
         width: 100%;
-        top: 730px;
+        top: 410px;
 
 
     }
 
     .overmijinfo {
         position: absolute;
-        top: 780px;
+        top: 450px;
         left: 7px;
         font-size: 14px;
         padding: 35px 0 30px;
@@ -248,7 +230,7 @@ Palette:
         text-align: center;
         text-transform: uppercase;
         width: 100%;
-        top: 50px;
+        top: -180px;
         border-bottom: 1px solid #cbcbcb;
 
     }
@@ -273,13 +255,13 @@ Palette:
 
     .overmijimg {
         position: relative;
-        left: 0;
-        top: 1175px;
-        padding: 100px 0 180px 0;
+        left: 180px;
+        top: 700px;
+        padding: 100px 0 100px 0;
         background-image: url("img/logoalyah.jpg");
         background-size: auto;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 60%;
 
 
         background-color: #B8D8BE;
@@ -288,11 +270,12 @@ Palette:
 
     .overmijlogo {
         position: relative;
-        top: 288px;
-        right: 10px;
+        top: 20px;
+        left: 390px;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        gap: 80px;
 
 
     }
@@ -304,8 +287,8 @@ Palette:
         flex-wrap: nowrap;
         justify-content: space-evenly;
 
-
-        margin-top: 1700px;
+        gap: 75px;
+        margin-top: 744px;
         margin-left: -125px;
         height: 375px;
         width: 600px;
@@ -320,30 +303,22 @@ Palette:
 
     .second-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: nowrap;
         gap: 50px;
         justify-content: space-evenly;
-        margin-top: 650px;
+        margin-top: -550px;
 
 
-        padding: 60px 60px 60px 60px;
+        padding: 60px 0 60px 0;
     }
 
 
+    .afspraakmaken,
     .webshop {
         position: relative;
-        top: -400px;
-        right: 131px;
-        width: 424px;
-
-    }
-
-    .afspraakmaken {
-        position: relative;
-        top: 100px;
-        left: 170px;
-        width: 430px;
+        top: 11px;
+        left: 250px;
 
     }
 
@@ -359,7 +334,7 @@ Palette:
         background-color: #B8D8BE;
         text-transform: uppercase;
 
-        left: 75px;
+        left: 55px;
         bottom: -10px;
 
         align-self: center;
@@ -385,11 +360,11 @@ Palette:
         text-transform: uppercase;
 
 
-        left: 60px;
+        left: 30px;
         bottom: 5px;
 
 
-        height: 50px;
+        height: 30px;
         width: 150px;
 
     }
@@ -450,12 +425,37 @@ Palette:
     }
 
 
+    .div1 {
+        position: relative;
+        left: 280px;
+        top: -340px;
+    }
+
+    .div2 {
+        position: relative;
+        right: 120px;
+    }
+
+    .div3 {
+        position: relative;
+        right: 120px;
+        top: -740px;
+    }
+
+    .div6 {
+        position: relative;
+        left: 280px;
+        top: -401px;
+
+}
+
+
     .portfolioimg {
         position: relative;
-        top: 200px;
+        top: 25px;
         left: 25px;
-        width: 90%;
-        height: 90%;
+        width: 60%;
+        height: 60%;
     }
 
     .portfolioimg:hover {
@@ -466,6 +466,7 @@ Palette:
     .parent {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -496,9 +497,9 @@ Palette:
         position: absolute;
         min-height: 125px;
         left: 0;
-        bottom: -5000px;
+        bottom: -2700px;
         width: 100%;
-        height: 35%;
+        height: 50%;
         background-color: rgb(184, 216, 190);
         color: #000000;
         text-align: center;
@@ -527,7 +528,7 @@ Palette:
         width: 100%;
 
         text-align: center;
-        bottom: -750px;
+        bottom: -230px;
     }
 
     .mobile-menu {
