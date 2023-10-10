@@ -18,7 +18,7 @@ Palette:
 */
 
 
-@media screen  and (max-width: 852px) {
+@media (min-width: 720px) and (max-width: 852px) {
 
     * {
         font-family: Poppins, sans-serif;
